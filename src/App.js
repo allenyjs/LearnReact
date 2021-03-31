@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import {buttons} from './EleItems.js'
 
 function App() {
+  const result = false;
   return (
     <div className="App">
       <header className="App-header">
@@ -15,9 +17,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {(result)?"XXX":"Learn React"}
         </a>
       </header>
+      <div>
+        {buttons(5)}
+      </div>
     </div>
   );
 }

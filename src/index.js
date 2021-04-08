@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <TextSection />
+    <TextSection msg="最新消息" today={new Date()} />
   </React.StrictMode>,
   document.getElementById('root')
 );

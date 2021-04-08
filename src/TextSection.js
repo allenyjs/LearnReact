@@ -1,8 +1,7 @@
-function TextSection(){
+function TextSection(props){
     return(
         <div>
-            <textarea>
-                HELLO
+            <textarea defaultValue={props.msg + props.today}>
             </textarea>
         </div>
     );

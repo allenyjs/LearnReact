@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import TextSection from './TextSection';
+import ShowStyleSection from './ShowStyleSection';
 import {printMessage} from './MyUtinity.js';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,8 +11,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App>HELLO ON ROOT</App>
     <TextSection msg="最新消息" today={new Date()} btnClick={printMessage}/>
+    <ShowStyleSection>樣式測試</ShowStyleSection>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {buttons} from './EleItems.js'
 
-function App() {
+function App(props) {
   const result = false;
   return (
     <div className="App">
@@ -23,6 +23,7 @@ function App() {
       <div>
         {buttons(5)}
       </div>
+      <p>{props.children}</p>
     </div>
   );
 }

@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import TextSection from './TextSection';
+import {printMessage} from './MyUtinity.js';
 import reportWebVitals from './reportWebVitals';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <TextSection msg="最新消息" today={new Date()} />
+    <TextSection msg="最新消息" today={new Date()} btnClick={printMessage}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
